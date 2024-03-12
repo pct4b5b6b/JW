@@ -6,7 +6,7 @@ public class Entry
     public string _prompt;
     public string _date;
 
-    List<string> prompt = new List<string>(){
+    List<string> prompt = new List<string>(){ //all questions that will be generated to prompt the user
         "What was the best thing that happened to you today?",
         "What is one thing you wish you could have done differently?",
         "Who was your favorite person to talk to?",
@@ -21,7 +21,8 @@ public class Entry
 
 
     public void promptquestion(){
-        
+        //prompt the user to type response based on the question asked
+        //call the function promnt from the above
         int numberofpromt= prompt.Count;
         Random rnm = new Random();
         int rindex= rnm.Next(numberofpromt);

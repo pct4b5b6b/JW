@@ -6,6 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {   
+        // Show the user different option
         List<Entry> entries = new List<Entry>();
         string number = "0";
         Save _save=  new Save();
@@ -20,6 +21,7 @@ class Program
             Console.Write("What would you like to do? ");
             number = Console.ReadLine();
 
+//option 1 calling from write.cs function
             if (number== "1"){
                 Entry entry = new Entry();
                 entry.promptquestion();
@@ -27,6 +29,7 @@ class Program
                 
             
             }
+            //option 2 calling from save.cs and load.cs
             else if (number=="2"){
                 foreach(Entry entry in entries){
                     Console.WriteLine(" ");
@@ -36,10 +39,11 @@ class Program
                     Console.WriteLine(" ");
                 }
             }
+            //option 3 function calling from load.cs
             else if (number=="3"){
                 _load._load(entries);
 
-            }
+            }//option 4 function calling from save.cs
             else if (number=="4"){
                 _save._save(entries);
 

@@ -27,9 +27,7 @@ public class Entry
         Random rnm = new Random();
         int rindex= rnm.Next(numberofpromt);
         _prompt = prompt[rindex];
-        Console.WriteLine("");
         Console.WriteLine(_prompt);
-        Console.WriteLine("");
         Console.WriteLine("Please enter your entry");
         _entry = Console.ReadLine();
 
